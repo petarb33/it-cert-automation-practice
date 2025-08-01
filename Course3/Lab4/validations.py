@@ -9,6 +9,7 @@ def validate_user(username, minlen):
     if minlen < 1:
         raise ValueError("minlen must be at least 1")
 
+    #Checks if first char is a letter
     first_char = username[0]
     first_char_int = ord(first_char)
     if (first_char_int < 97 or first_char_int > 122) and (first_char_int < 65 or first_char_int > 90):
